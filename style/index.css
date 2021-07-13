@@ -1,1 +1,231 @@
-/* Add CSS styling here */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Qahiri&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body{
+    width: 70%;
+    color:  #051b33;
+    font-family: 'Qahiri', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin: auto;
+}
+
+h1, h2, h6 {
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2%;
+    background-color: #f8edeb ;  
+    border-bottom: dashed 1px #6a040f ;
+}
+
+.my-name p {
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    padding: 2% 3%;
+}
+
+
+.navigation a, .summary a, .contact {
+    padding: 1% 3%;
+    border: 2px #d00000 solid;
+    transition: 0.3s;
+    text-decoration: none;
+    color:  #051b33;
+} 
+
+.navigation a:hover, .summary a:hover, .contact:hover {
+    background-color: #6a040f;
+    color: #fae1dd;
+}
+
+
+.container {
+    padding: 2%;
+    border-bottom: dashed 1px #6a040f ;
+}
+
+.top-content, .selfie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selfie {
+    display: flex;
+    width: 30%;
+}
+
+.selfie img {
+    width: 90%;
+    height: 40vh;
+    border-radius: 100%;
+}
+
+.summary {
+    width: 65%;
+    padding: 1%;
+}
+
+h2, .summary p, .summary a {
+    padding: 1% 0 2% 0;
+}
+
+.summary p:nth-child(2) {
+    color: #6a040f;
+}
+
+.summary a {
+    border-radius: 10px;
+    padding: 1% 2%;
+    background-color: #fcd5ce;
+}
+
+
+.bottom-content {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.bottom-content div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1% 0; 
+}
+
+h6 {
+    padding: 1% 0;
+    font-style: italic;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 2%;
+    background-color: #f8edeb;  
+}
+
+footer p, footer a. footer div {
+    padding: 0 0 1% 0;
+}
+
+footer a {
+    padding: 0% 1%;
+    border-radius: 10px;
+}
+
+footer p, footer div {
+    width: 50%;
+    text-align: center;
+    padding: 1%;
+}
+
+
+/*Media Queries*/
+/*Tablet*/
+@media (max-width: 800px) {
+    .selfie img {
+        width: 100%;
+        height: 20vh;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+    .my-name p {
+        font-size: 1.5rem;
+    }
+
+    .bottom-content {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer a {
+        width: 60%:
+    }
+}
+
+
+/*Phone*/
+@media (max-width: 500px) {
+    .top-content {
+        font-size: 0.7rem;
+    }
+
+    .selfie img {
+        height: 15vh;
+    }
+}
